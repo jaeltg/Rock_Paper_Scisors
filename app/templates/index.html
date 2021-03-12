@@ -1,6 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <form action="/play" method="POST">
+        <label for="name1"> Player's 1 Name: </label>
+        <input type="text" id="name1" name="name1">
+        <label for="choice1">Player's 1 Choice</label>
+        <input type="text" id="choice1" name="choice1">
+        <label for="name2"> Player's 2 Name: </label>
+        <input type="text" id="name2" name="name2">
+        <label for="choice2">Player's 2 Choice</label>
+        <input type="text" id="choice2" name="choice2">
+        <input type="submit" value="Let's Play">
+    </form>
     {% for player in players %}
     <div>
         <p>
@@ -8,11 +19,11 @@
         </p>
     </div>
     {% endfor %}
+    {% for result in results %}
     <div>
         <p>
             {{result}}
         </p>
     </div>
-
-
+    {% endfor %}
 {% endblock %}

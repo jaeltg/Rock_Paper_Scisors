@@ -1,26 +1,26 @@
 from app.models.player import Player
 
-player_1 = Player("Emily", "Paper")
-player_2 = Player("Rachel", "Scissors")
+players = []
+results = []
 
-players = [player_1, player_2]
+def add_player(player):
+    players.append(player)
 
-def game_result(move1, move2):
-    if move1.lower()  == "paper" and move2.lower()  == "scissors":
-        return f"{player_2.name} wins with SCISSORS!"
-    elif move1.lower()  == "scissors" and move2.move.lower()  == "paper":
-        return f"{player_1.name} wins with SCISSORS!"
-    elif move1.lower()  == "paper" and move2.lower()  == "rock":
-        return f"{player_1.name} wins with PAPER"
-    elif move1.lower()  == "rock" and move2.lower()  == "paper":
-        return f"{player_2.name} wins with PAPER"
-    elif move1.lower()  == "rock" and move2.lower()  == "scissors":
-        return f"{player_1.name} wins with ROCK"
-    elif move1.lower()  == "scissors" and move2.lower()  == "rock":
-        return f"{player_2.name} wins with ROCK"   
-    elif move1.lower()  == move2.lower():
+def add_result(result):
+    results.append(result)
+
+def game_result(player1, player2, choice1, choice2):
+    if choice1.lower()  == "paper" and choice2.lower()  == "scissors":
+        return f"{player2.name} wins with SCISSORS!"
+    elif choice1.lower()  == "scissors" and choice2.lower()  == "paper":
+        return f"{player1.name} wins with SCISSORS!"
+    elif choice1.lower()  == "paper" and choice2.lower()  == "rock":
+        return f"{player1.name} wins with PAPER"
+    elif choice1.lower()  == "rock" and choice2.lower()  == "paper":
+        return f"{player2.name} wins with PAPER"
+    elif choice1.lower()  == "rock" and choice2.lower()  == "scissors":
+        return f"{player1.name} wins with ROCK"
+    elif choice1.lower()  == "scissors" and choice2.lower()  == "rock":
+        return f"{player2.name} wins with ROCK"   
+    elif choice1.lower()  == choice2.lower():
         return f"It's a Tie!"   
-
-result = game_result(player_1.choice, player_2.choice)
-                 
-print(result)
