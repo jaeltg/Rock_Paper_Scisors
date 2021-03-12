@@ -3,6 +3,6 @@ from app import app
 from app.models.game import *
 from app.models.player import Player
 
-@app.route('/rock/scissors')
+@app.route('/play')
 def index():
-    return "Player 1 wins with rock"
+    return render_template('index.html', title="Play", players=players, result=result)

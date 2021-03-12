@@ -1,5 +1,5 @@
 class Player:
     
-    def __init__(self, name, move):
+    def __init__(self, name, choice):
         self.name = name
-        self.move = move
+        self.choice = choice
