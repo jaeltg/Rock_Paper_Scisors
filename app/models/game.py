@@ -1,7 +1,7 @@
 from app.models.player import Player
 
 player_1 = Player("Emily", "Paper")
-player_2 = Player("Rachel", "Paper")
+player_2 = Player("Rachel", "Scissors")
 
 players = [player_1, player_2]
 
