@@ -26,4 +26,4 @@ class Game:
         elif choice1.lower()  == "scissors" and choice2.lower()  == "rock":
             return f"{player2.name} wins with ROCK!"   
         elif choice1.lower()  == choice2.lower():
-            return f"It's a Tie!"   
+            return f"It's a TIE!"   

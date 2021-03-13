@@ -4,15 +4,26 @@
     <form action="/play" method="POST">
         <div class="player1">
             <label for="name1"> Player's 1 Name: </label>
-            <input type="text" id="name1" name="name1">
+            <input type="text" id="name1" name="name1" required="required">
             <label for="choice1">Player's 1 Choice</label>
-            <input type="text" id="choice1" name="choice1">
+            <select name="choice1" id="choice1">
+                <option value=" ">Choose your Weapon!</option>
+                <option value="Rock">Rock</option>
+                <option value="Paper">Paper</option>
+                <option value="Scissors">Scissors</option>
+            </select>
+            
         </div>
         <div class="player2">
             <label for="name2"> Player's 2 Name: </label>
-            <input type="text" id="name2" name="name2">
+            <input type="text" id="name2" name="name2" required="required">
             <label for="choice2">Player's 2 Choice</label>
-            <input type="text" id="choice2" name="choice2">
+            <select name="choice2" id="choice2">
+                <option value=" ">Choose your Weapon!</option>
+                <option value="Rock">Rock</option>
+                <option value="Paper">Paper</option>
+                <option value="Scissors">Scissors</option>
+            </select>
         </div>
 
         <input type="submit" value="Let's Play" class="submit">
