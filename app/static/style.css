@@ -87,15 +87,15 @@ input {
 
 .main {
     display: flex;
-    flex-flow: column wrap;
-    gap: 60px;
+    flex-flow: column-reverse wrap;
+    gap: 58px;
     grid-area: main;
     
 }
 
 .games {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column-reverse wrap;
     grid-area: games
 }
 
