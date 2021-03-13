@@ -65,13 +65,13 @@ form {
 
 .result {
     width: 150px;
-    height: 150px
+    height: 180px
 }
 
 .main {
     display: flex;
     flex-flow: column wrap;
-    gap: 45px;
+    gap: 60px;
     grid-area: main;
     font-weight: bold;
     

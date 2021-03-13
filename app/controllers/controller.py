@@ -9,7 +9,7 @@ def welcome():
 
 @app.route('/play')
 def index():
-     return render_template('index.html', title="Play", players=players, results=results)
+     return render_template('index.html', title="Play!", players=players, results=results)
 
 @app.route('/play', methods=['POST'])
 def create():

@@ -39,6 +39,8 @@
                 <img src={{url_for('static', filename="rock.png")}} class="result"/>
             {% elif result[-2] == "R" %}
                 <img src={{url_for('static', filename="paper.png")}} class="result"/>
+            {% else %}    
+                <img src={{url_for('static', filename="tie.png")}} class="result"/>
             {% endif %}
             </div>
             {% endfor %}
