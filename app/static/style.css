@@ -12,7 +12,7 @@ h2 {
 body {
     background-color:  #484d5c;
     color: #c0ccd4;
-    font-family: 'Cardo', serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 20px;
     margin: 0
@@ -25,17 +25,26 @@ img {
 li {
     list-style: none;
 }
+.buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
 
 a {
     background-color: #ffce00;
     display: block;
-    width: 200px;
+    width: 250px;
     color: #484d5c;
     border-radius: 8px;
     text-decoration: none;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 40px
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 25px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 form {
@@ -50,6 +59,12 @@ form {
     padding-bottom: 20px;
 }
 
+input {
+    border: #484d5c solid 2px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
 .submit {
     background-color:#484d5c;;
     display: block;
@@ -59,8 +74,10 @@ form {
     text-decoration: none;
     margin-right: auto;
     margin-left: auto;
-    font-family: 'Cardo', serif;
-    font-size: 20px
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .result {
@@ -73,7 +90,6 @@ form {
     flex-flow: column wrap;
     gap: 60px;
     grid-area: main;
-    font-weight: bold;
     
 }
 
@@ -87,4 +103,10 @@ form {
     display: grid;
     grid-template-areas:
     'main games';
+}
+
+.mainpagebutton {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px
 }

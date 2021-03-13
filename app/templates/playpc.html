@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <form action="/play" method="POST">
+    <form action="/playpc" method="POST">
         <div class="player1">
             <label for="name1"> Player's 1 Name: </label>
             <input type="text" id="name1" name="name1" required="required">
@@ -44,4 +44,5 @@
             {% endfor %}
         </section>
     </section>
+    <a href="/" class="mainpagebutton">Go Back to Main Page</a>
 {% endblock %}
