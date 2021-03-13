@@ -26,4 +26,11 @@ class Game:
         elif choice1.lower()  == "scissors" and choice2.lower()  == "rock":
             return f"{player2.name} wins with ROCK!"   
         elif choice1.lower()  == choice2.lower():
-            return f"It's a TIE!"   
+            return f"It's a TIE!"  
+
+    def pc_player(self):
+        choices = ["Rock", "Paper", "Scissors"]
+        import random
+        pc_player = Player("PC", random.choice(choices))
+        return pc_player
+
