@@ -1,0 +1,90 @@
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #ffce00;
+    font-size: 80px;
+    margin-bottom: 20px
+}
+
+h2 {
+    font-size: 40px
+}
+
+body {
+    background-color:  #484d5c;
+    color: #c0ccd4;
+    font-family: 'Cardo', serif;
+    text-align: center;
+    font-size: 20px;
+    margin: 0
+}
+
+img {
+    width: 400px;
+    height: 250px
+}
+li {
+    list-style: none;
+}
+
+a {
+    background-color: #ffce00;
+    display: block;
+    width: 200px;
+    color: #484d5c;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffce00;
+    color: #484d5c;
+    padding-top: 20px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.submit {
+    background-color:#484d5c;;
+    display: block;
+    width: 200px;
+    color:#ffce00;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Cardo', serif;
+    font-size: 20px
+}
+
+.result {
+    width: 150px;
+    height: 150px
+}
+
+.main {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 45px;
+    grid-area: main;
+    font-weight: bold;
+    
+}
+
+.games {
+    display: flex;
+    flex-flow: column wrap;
+    grid-area: games
+}
+
+.play {
+    display: grid;
+    grid-template-areas:
+    'main games';
+}

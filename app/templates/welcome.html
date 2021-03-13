@@ -2,7 +2,7 @@
 
 {% block content %}
     <h2>Welcome!</h2>
-    <img src="paper.png" alt="Rock-Paper-Scissors">
+    <img src={{url_for('static', filename="RPS.png")}}/>
     <ul>
         <li>The players must select in between rock, paper and scissors.</li>
         <li>Rock wins against scissors, Scissors wins against paper and Paper wins against Rock.</li>
