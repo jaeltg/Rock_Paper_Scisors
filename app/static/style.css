@@ -47,6 +47,12 @@ a {
     padding-bottom: 5px;
 }
 
+a:hover {
+   background-color: transparent;
+   color:#ffce00;
+   border:#ffce00 solid 3px 
+}
+
 form {
     display: flex;
     flex-flow: column wrap;
@@ -78,6 +84,13 @@ input {
     font-size: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.submit:hover {
+    background-color: transparent;
+    color: #484d5c;
+    font-weight: bold;
+    border: #484d5c solid 4px;
 }
 
 .result {
